@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional Portfolio</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, sans-serif;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f5f5f5;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 1300px;
+        background: white;
+        padding: 120px;
+        border-radius: 30px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 40px;
+      }
+
+      .profile-section {
+        text-align: center;
+      }
+
+      .profile-image {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        object-fit: cover;
+      }
+
+      .name {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 8px;
+      }
+
+      .title {
+        color: #666;
+        margin-bottom: 20px;
+        font-size: 16px;
+      }
+
+      .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 20px;
+      }
+
+      .social-links a {
+        color: #333;
+        text-decoration: none;
+        padding: 8px;
+      }
+
+      .content-section h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+      }
+
+      .subtitle {
+        color: #666;
+        margin-bottom: 30px;
+      }
+
+      .buttons {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 30px;
+      }
+
+      .btn {
+        padding: 10px 25px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.3s ease;
+      }
+
+      .btn-primary {
+        background: #0066ff;
+        color: white;
+      }
+
+      .btn-secondary {
+        background: #f5f5f5;
+        color: #333;
+      }
+
+      .description {
+        color: #666;
+        line-height: 1.6;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="profile-section">
+        <a href="/">
+          <img
+            src="/static/img/Muh. Faqih Muttaqin.jpg"
+            alt="Profile Picture"
+            class="profile-image"
+          />
+          <h2 class="name">Muh. Faqih Muttaqin</h2>
+          <p class="title">22.83.0910</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">fb</a>
+            <a href="#" aria-label="Twitter">tw</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="Instagram">ig</a>
+          </div>
+        </a>
+      </div>
+      <div class="content-section">
+        <h1>Hello</h1>
+        <p class="subtitle">Nama Saya Muh. Faqih Muttaqin</p>
+        <div class="buttons">
+          <a href="#" class="btn btn-primary">RESUME</a>
+          <a href="#" class="btn btn-secondary">PROJECTS</a>
+        </div>
+        <p class="description">
+          Come give me somethin' i can feel, oh-oh, oh
+          Don't you want me like i want you, baby?
+          Don't you need me like i need you now?
+          Sleep tomorrow, but tonight, go crazy
+          All you gotta do is just meet me at the
+          Apartment, apartment
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
